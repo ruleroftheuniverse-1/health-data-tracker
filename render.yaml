@@ -1,7 +1,6 @@
 services:
   - type: web
     name: health-data-tracker
-    runtime: php
-    buildCommand: ""
-    startCommand: "php -S 0.0.0.0:$PORT"
+    env: php
     plan: free
+    startCommand: "php -S 0.0.0.0:$PORT"
